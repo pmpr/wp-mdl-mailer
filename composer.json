@@ -1,0 +1,25 @@
+{
+  "name": "pmpr-pkg/wp-pkg-mailer",
+  "type": "project",
+  "license": "proprietary",
+  "description": "SMTP Mailer Package for Wordpress",
+  "keywords": [
+    "wordpress",
+    "package"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "swiftmailer/swiftmailer": "^6.0",
+    "pmpr-cmn/wp-cmn-foundation": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pmpr\\Package\\Mailer\\": "src/Pmpr/Package/Mailer"
+    },
+    "files": [
+      "index.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
+
