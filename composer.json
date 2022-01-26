@@ -9,7 +9,6 @@
   ],
   "require": {
     "php": ">=7.4",
-    "swiftmailer/swiftmailer": "^6.0",
     "pmpr-cmn/wp-cmn-foundation": "dev-main"
   },
   "autoload": {
