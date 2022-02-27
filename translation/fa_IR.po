@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pmpr Mailer\n"
+"POT-Creation-Date: 2022-02-22 11:15+0330\n"
+"PO-Revision-Date: 2022-02-22 11:22+0330\n"
+"Last-Translator:  Farshad Asgharzade <Farshad_asgharzade@hotmail.com>\n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: index.php\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Source-Language: en\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: lib\n"
+"X-Poedit-SearchPathExcluded-1: *.js\n"
+
+#: src/Pmpr/Package/Mailer/Ajax.php:41
+#, php-format
+msgid "Test message sent successfully to %s"
+msgstr "پیام با موفقیت برای %s ارسال شد"
+
+#: src/Pmpr/Package/Mailer/Ajax.php:44
+msgid "Something wrong on sending mail, check log files."
+msgstr ""
+"مشکلی در فرآیند ارسال ایمیل به وجود آمده است، لطفا فایل لاگ را بررسی کنید."
+
+#: src/Pmpr/Package/Mailer/Ajax.php:57
+msgid "Require parameter is missing"
+msgstr "پارامتر‌های ضروری یافت نشدند"
+
+#: src/Pmpr/Package/Mailer/Ajax.php:61
+#, php-format
+msgid "%s is not a valid email address"
+msgstr "%s یک ایمیل معتبر نیست"
+
+#: src/Pmpr/Package/Mailer/Mailer.php:54
+msgid "Setting"
+msgstr "تنظیمات"
+
+#: src/Pmpr/Package/Mailer/Mailer.php:56
+#, php-format
+msgid ""
+"SMTP Mailer cannot send email until you enter your credentials in the %s."
+msgstr ""
+"تا زمانی که اطلاعات مربوطه در %s را وارد نکرده‌اید، ایمیل رسان غیر فعال خواهد "
+"بود."
+
+#: src/Pmpr/Package/Mailer/Setting.php:44
+msgid "Mailer"
+msgstr "ایمیل رسان"
+
+#: src/Pmpr/Package/Mailer/Setting.php:54
+#: src/Pmpr/Package/Mailer/Setting.php:58
+msgid "General"
+msgstr "عمومی"
+
+#: src/Pmpr/Package/Mailer/Setting.php:62
+msgid "Disable Mailer"
+msgstr "غیر فعال کردن"
+
+#: src/Pmpr/Package/Mailer/Setting.php:63
+msgid "Check this item to disable mailer functionality."
+msgstr "برای غیر فعال کردن عملکرد."
+
+#: src/Pmpr/Package/Mailer/Setting.php:68
+msgid "From Email Address"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:69
+msgid ""
+"The email address which will be used as the From Address if it is not "
+"supplied to the mail function."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:74
+msgid "From Name"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:75
+msgid ""
+"The name which will be used as the From Name if it is not supplied to the "
+"mail function."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:81
+msgid "SMTP Configuration"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:85
+msgid "SMTP Host"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:87
+#, php-format
+msgid "The SMTP server which will be used to send email. For example: %s"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:94
+msgid "SMTP Authentication"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:95
+msgid "Whether to use SMTP Authentication when sending an email"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:103
+msgid "SMTP Username"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:104
+msgid "Your SMTP Username."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:109
+msgid "SMTP Password"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:110
+msgid "Your SMTP Password."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:115
+msgid "Type of Encryption"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:117
+msgid "No Encryption"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:118
+msgid "SSL"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:119
+msgid "TLS"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:121
+msgid "For most servers SSL/TLS is the recommended option."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:126
+msgid "SMTP Port"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:128
+#: src/Pmpr/Package/Mailer/Setting.php:135
+msgid "587"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:129
+#: src/Pmpr/Package/Mailer/Setting.php:136
+msgid "465"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:130
+msgid "25"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:133
+#, php-format
+msgid ""
+"The port which will be used when sending an email (%s). If you choose TLS it "
+"should be set to %s. For SSL use port %s instead."
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:134
+msgid "587/465/25"
+msgstr ""
+
+#: src/Pmpr/Package/Mailer/Setting.php:144
+msgid "Test Email"
+msgstr "ایمیل آزمایشی"
+
+#: src/Pmpr/Package/Mailer/Setting.php:148
+msgid "To"
+msgstr "به"
+
+#: src/Pmpr/Package/Mailer/Setting.php:153
+msgid "Subject"
+msgstr "موضوع"
+
+#: src/Pmpr/Package/Mailer/Setting.php:154
+msgid "This is test subject"
+msgstr "این یک موضوعآزمایشی است"
+
+#: src/Pmpr/Package/Mailer/Setting.php:158
+msgid "Email Body"
+msgstr "متن ایمیل"
+
+#: src/Pmpr/Package/Mailer/Setting.php:160
+msgid "This is a test message"
+msgstr "این یک پیغام آزمایشی است"
+
+#: src/Pmpr/Package/Mailer/Setting.php:164
+msgid "Send Email"
+msgstr "ارسال ایمیل"
+
