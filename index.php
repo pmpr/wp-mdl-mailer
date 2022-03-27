@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62400d8c8da7a             |
+    |             6240a3cd013f1             |
     |_______________________________________|
 */
- use Pmpr\Package\Mailer\Mailer; Mailer::symcgieuakksimmu();
+ use Pmpr\Module\Mailer\Mailer; Mailer::symcgieuakksimmu();

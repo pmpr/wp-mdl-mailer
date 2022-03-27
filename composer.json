@@ -1,8 +1,8 @@
 {
-  "name": "pmpr-pkg/wp-pkg-mailer",
+  "name": "pmpr-mdl/wp-mdl-mailer",
   "type": "project",
   "license": "proprietary",
-  "description": "SMTP Mailer Package for Wordpress",
+  "description": "SMTP Mailer Module for Wordpress",
   "keywords": [
     "wordpress",
     "package"
@@ -13,7 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Pmpr\\Package\\Mailer\\": "src/Pmpr/Package/Mailer"
+      "Pmpr\\Module\\Mailer\\": "src/Pmpr/Module/Mailer"
     },
     "files": [
       "index.php"
