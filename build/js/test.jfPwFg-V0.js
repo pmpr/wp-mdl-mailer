@@ -51,8 +51,9 @@ external_jQuery_default()(document).ready(function () {
 
         e.preventDefault();
         let $this = external_jQuery_default()(this),
-            $fields = $this.closest('.cmb2-metabox.cmb-field-list').find(':input'),
-            $data = PMPRUtil.serializeForm($fields), $action = PMPRUtil.getSettingByPath('ajax.send_email');
+            $fields = $this.closest('.pr-section-fieldset').find(':input'),
+            $data = PMPRUtil.serializeForm($fields),
+            $action = PMPRUtil.getSettingByPath('ajax.send_email');
 
         PMPRRequest.post($action, $data)
             .setElement($this)
