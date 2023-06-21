@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Mailer\n"
-"POT-Creation-Date: 2022-12-10 17:32+0330\n"
-"PO-Revision-Date: 2022-12-10 17:33+0330\n"
+"POT-Creation-Date: 2023-06-21 15:24+0330\n"
+"PO-Revision-Date: 2023-06-21 15:25+0330\n"
 "Last-Translator: Farshad Asgharzade <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Source-Language: en\n"
@@ -22,34 +22,34 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: lib\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: src/Pmpr/Module/Mailer/Ajax.php:41
+#: src/Pmpr/Module/Mailer/Ajax.php:40
 #, php-format
 msgid "Test message sent successfully to %s"
 msgstr "پیام با موفقیت برای %s ارسال شد"
 
-#: src/Pmpr/Module/Mailer/Ajax.php:44
+#: src/Pmpr/Module/Mailer/Ajax.php:43
 msgid "Something wrong on sending mail, check log files."
 msgstr ""
 "مشکلی در فرآیند ارسال ایمیل به وجود آمده است، لطفا فایل لاگ را بررسی کنید."
 
-#: src/Pmpr/Module/Mailer/Ajax.php:57
+#: src/Pmpr/Module/Mailer/Ajax.php:56
 msgid "Require parameter is missing"
 msgstr "پارامتر‌های ضروری یافت نشدند"
 
-#: src/Pmpr/Module/Mailer/Ajax.php:61
+#: src/Pmpr/Module/Mailer/Ajax.php:60
 #, php-format
 msgid "%s is not a valid email address"
 msgstr "%s یک ایمیل معتبر نیست"
 
-#: src/Pmpr/Module/Mailer/Mailer.php:25 src/Pmpr/Module/Mailer/Setting.php:44
+#: src/Pmpr/Module/Mailer/Mailer.php:22 src/Pmpr/Module/Mailer/Setting.php:41
 msgid "Mailer"
 msgstr "ایمیل رسان"
 
-#: src/Pmpr/Module/Mailer/Mailer.php:56
+#: src/Pmpr/Module/Mailer/Mailer.php:50
 msgid "Setting"
 msgstr "تنظیمات"
 
-#: src/Pmpr/Module/Mailer/Mailer.php:58
+#: src/Pmpr/Module/Mailer/Mailer.php:52
 #, php-format
 msgid ""
 "SMTP Mailer cannot send email until you enter your credentials in the %s."
@@ -57,48 +57,52 @@ msgstr ""
 "تا زمانی که اطلاعات مربوطه در %s را وارد نکرده‌اید، ایمیل رسان غیر فعال خواهد "
 "بود."
 
-#: src/Pmpr/Module/Mailer/Setting.php:54 src/Pmpr/Module/Mailer/Setting.php:58
+#: src/Pmpr/Module/Mailer/Setting.php:42
+msgid "Mailer Setting"
+msgstr "تنظیمات ایمیل رسان"
+
+#: src/Pmpr/Module/Mailer/Setting.php:52 src/Pmpr/Module/Mailer/Setting.php:57
 msgid "General"
 msgstr "عمومی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:62
+#: src/Pmpr/Module/Mailer/Setting.php:53
+msgid "General Configuration"
+msgstr "پیکربندی عمومی"
+
+#: src/Pmpr/Module/Mailer/Setting.php:61
 msgid "From Email Address"
 msgstr "آدرس ایمیل"
 
-#: src/Pmpr/Module/Mailer/Setting.php:63
-msgid ""
-"The email address which will be used as the From Address if it is not "
-"supplied to the mail function."
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:68
+#: src/Pmpr/Module/Mailer/Setting.php:66
 msgid "From Name"
 msgstr "نام"
 
-#: src/Pmpr/Module/Mailer/Setting.php:69
-msgid ""
-"The name which will be used as the From Name if it is not supplied to the "
-"mail function."
-msgstr ""
+#: src/Pmpr/Module/Mailer/Setting.php:73
+msgid "SMTP"
+msgstr "اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:75
+#: src/Pmpr/Module/Mailer/Setting.php:74
 msgid "SMTP Configuration"
 msgstr "پیکربندی اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:79
+#: src/Pmpr/Module/Mailer/Setting.php:78
+msgid "Configuration"
+msgstr "پیکربندی"
+
+#: src/Pmpr/Module/Mailer/Setting.php:82
 msgid "SMTP Host"
 msgstr "میزبان اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:81
+#: src/Pmpr/Module/Mailer/Setting.php:84
 #, php-format
 msgid "The SMTP server which will be used to send email. For example: %s"
 msgstr "سرور SMTP که برای ارسال ایمیل استفاده خواهد شد. به عنوان مثال: %s"
 
-#: src/Pmpr/Module/Mailer/Setting.php:88
+#: src/Pmpr/Module/Mailer/Setting.php:89
 msgid "SMTP Authentication"
 msgstr "احراز هویت اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:89
+#: src/Pmpr/Module/Mailer/Setting.php:90
 msgid "Whether to use SMTP Authentication when sending an email"
 msgstr "آیا هنگام ارسال ایمیل از احراز هویت SMTP استفاده شود یا خیر"
 
@@ -106,47 +110,35 @@ msgstr "آیا هنگام ارسال ایمیل از احراز هویت SMTP ا
 msgid "SMTP Username"
 msgstr "نام کاربری اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:102
+#: src/Pmpr/Module/Mailer/Setting.php:100
 msgid "SMTP Password"
 msgstr "پسورد اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:107
+#: src/Pmpr/Module/Mailer/Setting.php:103
 msgid "Type of Encryption"
 msgstr "نوع رمزنگاری"
 
-#: src/Pmpr/Module/Mailer/Setting.php:109
-msgid "No Encryption"
-msgstr "بدون رمزنگاری"
-
-#: src/Pmpr/Module/Mailer/Setting.php:110
-msgid "SSL"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:111
-msgid "TLS"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:113
+#: src/Pmpr/Module/Mailer/Setting.php:104
 msgid "For most servers SSL/TLS is the recommended option."
 msgstr "برای بیشتر سرورها SSL/TLS پیشنهاد می‌شود."
 
-#: src/Pmpr/Module/Mailer/Setting.php:118
+#: src/Pmpr/Module/Mailer/Setting.php:106
+msgid "No Encryption"
+msgstr "بدون رمزنگاری"
+
+#: src/Pmpr/Module/Mailer/Setting.php:107
+msgid "SSL"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Setting.php:108
+msgid "TLS"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Setting.php:112
 msgid "SMTP Port"
 msgstr "پورت اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting.php:120 src/Pmpr/Module/Mailer/Setting.php:127
-msgid "587"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:121 src/Pmpr/Module/Mailer/Setting.php:128
-msgid "465"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:122
-msgid "25"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Setting.php:125
+#: src/Pmpr/Module/Mailer/Setting.php:115
 #, php-format
 msgid ""
 "The port which will be used when sending an email (%s). If you choose TLS it "
@@ -155,37 +147,52 @@ msgstr ""
 "درگاهی که هنگام ارسال ایمیل استفاده می شود (%s). اگر TLS را انتخاب کنید باید "
 "روی %s تنظیم شود. برای SSL از پورت %s استفاده کنید."
 
-#: src/Pmpr/Module/Mailer/Setting.php:126
+#: src/Pmpr/Module/Mailer/Setting.php:116
 msgid "587/465/25"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting.php:136
-msgid "Test Email"
-msgstr "ایمیل آزمایشی"
+#: src/Pmpr/Module/Mailer/Setting.php:117 src/Pmpr/Module/Mailer/Setting.php:122
+msgid "587"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Setting.php:118 src/Pmpr/Module/Mailer/Setting.php:123
+msgid "465"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Setting.php:124
+msgid "25"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Setting.php:133
+msgid "Send Test Email"
+msgstr "ارسال ایمیل آزمایشی"
+
+#: src/Pmpr/Module/Mailer/Setting.php:137
+msgid "Send To"
+msgstr "ارسال به"
 
 #: src/Pmpr/Module/Mailer/Setting.php:140
-msgid "To"
-msgstr "به"
-
-#: src/Pmpr/Module/Mailer/Setting.php:145
 msgid "Subject"
 msgstr "موضوع"
 
-#: src/Pmpr/Module/Mailer/Setting.php:146
+#: src/Pmpr/Module/Mailer/Setting.php:141
 msgid "This is test subject"
 msgstr "این یک موضوعآزمایشی است"
 
-#: src/Pmpr/Module/Mailer/Setting.php:150
+#: src/Pmpr/Module/Mailer/Setting.php:144
 msgid "Email Body"
 msgstr "متن ایمیل"
 
-#: src/Pmpr/Module/Mailer/Setting.php:152
+#: src/Pmpr/Module/Mailer/Setting.php:145
 msgid "This is a test message"
 msgstr "این یک پیغام آزمایشی است"
 
-#: src/Pmpr/Module/Mailer/Setting.php:156
+#: src/Pmpr/Module/Mailer/Setting.php:148
 msgid "Send Email"
 msgstr "ارسال ایمیل"
+
+#~ msgid "To"
+#~ msgstr "به"
 
 #~ msgid "Your SMTP Username."
 #~ msgstr "نام کاربری اس ام تی پی شما."
