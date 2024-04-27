@@ -39,24 +39,7 @@ var __webpack_exports__ = {};
                 .send(data)
 
     }, '#send_email');
-})()
-// import $ from 'jquery';
-
-// $(document).ready(function () {
-//
-//     $('#send_email').on('click', function (e) {
-//
-//         e.preventDefault();
-//         let $this   = $(this),
-//             $fields = $this.closest('.pr-section-fieldset').find(':input'),
-//             $data   = PMPRUtil.serializeForm($fields),
-//             $action = PMPRUtil.getSettingByPath('ajax.send_email');
-//
-//         PMPRRequest.post($action, $data)
-//                    .setElement($this)
-//                    .addNonce().send();
-//     });
-// });
+})();
 
 /******/ })()
 ;
