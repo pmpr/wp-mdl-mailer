@@ -4,4 +4,4 @@
     |             6630290f59842             |
     |_______________________________________|
 */
- use Pmpr\Module\Mailer\Mailer; Mailer::symcgieuakksimmu();
+ namespace Pmpr\Module\Mailer\Generic; use Pmpr\Module\Mailer\Container; abstract class Common extends Container { }
