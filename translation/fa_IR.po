@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Mailer\n"
-"POT-Creation-Date: 2024-04-30 02:24+0330\n"
-"PO-Revision-Date: 2024-04-30 02:35+0330\n"
+"POT-Creation-Date: 2024-04-30 17:17+0330\n"
+"PO-Revision-Date: 2024-04-30 17:18+0330\n"
 "Last-Translator: Farshad Asgharzade <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -79,15 +79,15 @@ msgstr "نام کاربری"
 msgid "Password"
 msgstr "گذرواژه"
 
-#: src/Pmpr/Module/Mailer/Gmail/Gmail.php:38
+#: src/Pmpr/Module/Mailer/Gmail/Gmail.php:37
 msgid "Access granted successfully!"
 msgstr "دسترسی با موفقیت اعطا شد!"
 
-#: src/Pmpr/Module/Mailer/Gmail/Gmail.php:41
+#: src/Pmpr/Module/Mailer/Gmail/Gmail.php:40
 msgid "Access could not be granted!"
 msgstr "دسترسی داده نشد!"
 
-#: src/Pmpr/Module/Mailer/Gmail/OAuth.php:126
+#: src/Pmpr/Module/Mailer/Gmail/OAuth.php:141
 msgid "Error: "
 msgstr "خطا: "
 
@@ -104,28 +104,30 @@ msgid "Grant Access Status"
 msgstr "وضعیت دسترسی"
 
 #: src/Pmpr/Module/Mailer/Gmail/Setting.php:42
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:109
+msgid "Authorized redirect URI"
+msgstr ""
+
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:43
+msgid "Use this url as authorized redirect uri in google api console."
+msgstr ""
+"از این url به عنوان authorized redirect uri در google api console استفاده "
+"کنید."
+
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:47
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:103
 msgid "Client ID"
 msgstr "شناسه مشتری (Client ID)"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:43
-msgid "The client id of your web application."
-msgstr "شناسه وب اپلیکیشن شما."
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:47
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:109
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:51
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:103
 msgid "Client Secret"
 msgstr "کلید مشتری (Client Secret)"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:48
-msgid "The client secret of your web application."
-msgstr "کلید وب اپلیکیشن شما."
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:52
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:55
 msgid "OAuth Email"
 msgstr "ایمیل OAuth"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:53
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:56
 msgid ""
 "The email address that you will use for SMTP authentication. This should be "
 "the same email used in the Google Developers Console."
@@ -133,34 +135,26 @@ msgstr ""
 "آدرس ایمیلی که برای احراز هویت SMTP استفاده خواهید کرد. این ایمیل باید همان "
 "ایمیلی باشد که در Google Developers Console استفاده شده است."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:63
-msgid "Gmail Grant Access"
-msgstr "اعطای دسترسی جیمیل"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:71
-msgid "Grant Permission"
-msgstr "اعطای دسترسی"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:95
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:106
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:89
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:100
 msgid "Not connected."
 msgstr "وصل نشده."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:97
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:91
 #, php-format
 msgid "Please %s to grant access permission."
 msgstr "لطفا برای اعطای مجوز دسترسی %s."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:98
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:92
 msgid "Click Here"
 msgstr "اینجا کلیک کنید"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:108
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:102
 #, php-format
 msgid "Please fill %s and %s and save settings."
 msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره کنید."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:115
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:109
 msgid "Connected"
 msgstr "وصل شده"
 
@@ -293,6 +287,18 @@ msgstr "این یک پیغام آزمایشی است"
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:132
 msgid "Send Email"
 msgstr "ارسال ایمیل"
+
+#~ msgid "The client id of your web application."
+#~ msgstr "شناسه وب اپلیکیشن شما."
+
+#~ msgid "The client secret of your web application."
+#~ msgstr "کلید وب اپلیکیشن شما."
+
+#~ msgid "Gmail Grant Access"
+#~ msgstr "اعطای دسترسی جیمیل"
+
+#~ msgid "Grant Permission"
+#~ msgstr "اعطای دسترسی"
 
 #~ msgid "SMTP"
 #~ msgstr "اس ام تی پی"
