@@ -24,7 +24,7 @@ var __webpack_exports__ = {};
                 .onSuccess((response) => {
                     PRBackendHelper.getModal().show({
                         content: response,
-                        type: 'sucsess'
+                        type: 'success'
                     });
                 })
                 .onError((error) => {
