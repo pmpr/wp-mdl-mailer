@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Mailer\n"
-"POT-Creation-Date: 2024-10-15 01:35+0330\n"
-"PO-Revision-Date: 2024-10-15 01:36+0330\n"
+"POT-Creation-Date: 2025-01-19 17:49+0330\n"
+"PO-Revision-Date: 2025-01-19 17:50+0330\n"
 "Last-Translator: Farshad Asgharzade <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -50,7 +50,6 @@ msgid "Generic SMTP Configuration"
 msgstr "پیکربندی SMTP عمومی"
 
 #: src/Pmpr/Module/Mailer/Generic/Setting.php:34
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:78
 msgid "Credential"
 msgstr "اطلاعات حساب"
 
@@ -79,55 +78,19 @@ msgstr "نام کاربری"
 msgid "Password"
 msgstr "گذرواژه"
 
-#: src/Pmpr/Module/Mailer/Gmail/OAuth.php:142
-msgid "Error: "
-msgstr "خطا: "
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:48
-msgid "Access granted successfully!"
-msgstr "دسترسی با موفقیت اعطا شد!"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:51
-msgid "Access could not be granted!"
-msgstr "دسترسی داده نشد!"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:72
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:32
 msgid "Gmail SMTP"
 msgstr "SMTP جیمیل"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:74
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:34
 msgid "Gmail SMTP Configuration"
 msgstr "پیکربندی SMTP جیمیل"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:81
-msgid "Grant Access Status"
-msgstr "وضعیت دسترسی"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:86
-msgid "Authorized redirect URI"
-msgstr ""
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:87
-msgid "Use this url as authorized redirect uri in google api console."
-msgstr ""
-"از این url به عنوان authorized redirect uri در google api console استفاده "
-"کنید."
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:91
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:145
-msgid "Client ID"
-msgstr "شناسه مشتری (Client ID)"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:95
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:145
-msgid "Client Secret"
-msgstr "کلید مشتری (Client Secret)"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:99
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:39
 msgid "OAuth Email"
 msgstr "ایمیل OAuth"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:100
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:40
 msgid ""
 "The email address that you will use for SMTP authentication. This should be "
 "the same email used in the Google Developers Console."
@@ -135,45 +98,16 @@ msgstr ""
 "آدرس ایمیلی که برای احراز هویت SMTP استفاده خواهید کرد. این ایمیل باید همان "
 "ایمیلی باشد که در Google Developers Console استفاده شده است."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:131
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:142
-msgid "Not connected."
-msgstr "وصل نشده."
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:133
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:108
 #, php-format
-msgid "Please %s to grant access permission."
-msgstr "لطفا برای اعطای مجوز دسترسی %s."
+msgid "%s cannot send email until you enter your credentials in the %s."
+msgstr ""
+"تا زمانی که اطلاعات مربوطه در %s را وارد نکرده‌اید، %s غیر فعال خواهد بود."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:134
-msgid "Click Here"
-msgstr "اینجا کلیک کنید"
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:144
-#, php-format
-msgid "Please fill %s and %s and save settings."
-msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره کنید."
-
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:151
-msgid "Connected"
-msgstr "وصل شده"
-
-#: src/Pmpr/Module/Mailer/Mailer.php:26
+#: src/Pmpr/Module/Mailer/Mailer.php:27
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:38
 msgid "Mailer"
 msgstr "ایمیل رسان"
-
-#: src/Pmpr/Module/Mailer/Mailer.php:49
-msgid "Setting"
-msgstr "تنظیمات"
-
-#: src/Pmpr/Module/Mailer/Mailer.php:51
-#, php-format
-msgid ""
-"SMTP Mailer cannot send email until you enter your credentials in the %s."
-msgstr ""
-"تا زمانی که اطلاعات مربوطه در %s را وارد نکرده‌اید، ایمیل رسان غیر فعال خواهد "
-"بود."
 
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:39
 msgid "Mailer Setting"
@@ -287,6 +221,47 @@ msgstr "این یک پیغام آزمایشی است"
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:128
 msgid "Send Email"
 msgstr "ارسال ایمیل"
+
+#~ msgid "Error: "
+#~ msgstr "خطا: "
+
+#~ msgid "Access granted successfully!"
+#~ msgstr "دسترسی با موفقیت اعطا شد!"
+
+#~ msgid "Access could not be granted!"
+#~ msgstr "دسترسی داده نشد!"
+
+#~ msgid "Grant Access Status"
+#~ msgstr "وضعیت دسترسی"
+
+#~ msgid "Use this url as authorized redirect uri in google api console."
+#~ msgstr ""
+#~ "از این url به عنوان authorized redirect uri در google api console استفاده "
+#~ "کنید."
+
+#~ msgid "Client ID"
+#~ msgstr "شناسه مشتری (Client ID)"
+
+#~ msgid "Client Secret"
+#~ msgstr "کلید مشتری (Client Secret)"
+
+#~ msgid "Not connected."
+#~ msgstr "وصل نشده."
+
+#~ msgid "Please %s to grant access permission."
+#~ msgstr "لطفا برای اعطای مجوز دسترسی %s."
+
+#~ msgid "Click Here"
+#~ msgstr "اینجا کلیک کنید"
+
+#~ msgid "Please fill %s and %s and save settings."
+#~ msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره کنید."
+
+#~ msgid "Connected"
+#~ msgstr "وصل شده"
+
+#~ msgid "Setting"
+#~ msgstr "تنظیمات"
 
 #~ msgid "The client id of your web application."
 #~ msgstr "شناسه وب اپلیکیشن شما."
