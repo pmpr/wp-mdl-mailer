@@ -29,7 +29,7 @@ var __webpack_exports__ = {};
                 })
                 .onError((error) => {
                     PRBackendHelper.getModal().show({
-                        content: PRHelper.getFormat().error2string(error),
+                        content: PRHelper.getTool().error2string(error),
                         type: 'warning'
                     });
                 })
