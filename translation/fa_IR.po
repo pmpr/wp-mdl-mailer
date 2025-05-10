@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Mailer\n"
-"POT-Creation-Date: 2025-01-19 17:49+0330\n"
-"PO-Revision-Date: 2025-01-19 17:50+0330\n"
+"POT-Creation-Date: 2025-05-08 10:25+0330\n"
+"PO-Revision-Date: 2025-05-08 10:26+0330\n"
 "Last-Translator: Farshad Asgharzade <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Source-Language: en\n"
@@ -21,6 +21,36 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: lib\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:69
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:61
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:124
+msgid "General"
+msgstr "عمومی"
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:73
+msgid "This section lets you customize the Components emails."
+msgstr "این بخش به شما امکان می‌دهد ایمیل‌های کامپوننت‌ها را سفارشی‌سازی کنید."
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:74
+msgid "Click here to preview your email template."
+msgstr "برای مشاهده پیش‌نمایش قالب ایمیل خود اینجا کلیک کنید."
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:80
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:101
+msgid "Subject"
+msgstr "موضوع"
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:105
+msgid "Title"
+msgstr "عنوان"
+
+#: src/Pmpr/Module/Mailer/AbstractEmail.php:109
+msgid "Content"
+msgstr "محتوا"
 
 #: src/Pmpr/Module/Mailer/Ajax.php:45
 #, php-format
@@ -41,56 +71,80 @@ msgstr "پارامتر‌های ضروری یافت نشدند"
 msgid "%s is not a valid email address"
 msgstr "%s یک ایمیل معتبر نیست"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:28
+#: src/Pmpr/Module/Mailer/Email/Test.php:20
+msgid "Test Email"
+msgstr "ایمیل آزمایشی"
+
+#: src/Pmpr/Module/Mailer/Email/Test.php:22
+msgid "Configure Test"
+msgstr "پیکربندی تست"
+
+#: src/Pmpr/Module/Mailer/Email/Test.php:31
+msgid "Send To"
+msgstr "ارسال به"
+
+#: src/Pmpr/Module/Mailer/Email/Test.php:32
+msgid ""
+"After completing the general section fields, save the settings, then you can "
+"send a test email."
+msgstr ""
+"پس از تکمیل فیلد های بخش عمومی، تنظیمات را ذخیره کنید، سپس می‌توانید ایمیل "
+"آزمایشی بفرستید."
+
+#: src/Pmpr/Module/Mailer/Email/Test.php:35
+msgid "Send Email"
+msgstr "ارسال ایمیل"
+
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:30
 msgid "Generic SMTP"
 msgstr "SMTP عمومی"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:30
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:32
 msgid "Generic SMTP Configuration"
 msgstr "پیکربندی SMTP عمومی"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:34
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:36
 msgid "Credential"
 msgstr "اطلاعات حساب"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:37
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:39
 msgid "SMTP Host"
 msgstr "میزبان اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:40
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:42
 #, php-format
 msgid "The SMTP server which will be used to send email. For example: %s"
 msgstr "سرور SMTP که برای ارسال ایمیل استفاده خواهد شد. به عنوان مثال: %s"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:46
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:48
 msgid "Enable Authentication"
 msgstr "فعال‌سازی احراز هویت"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:47
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:50
 msgid "Whether to use SMTP Authentication when sending an email"
 msgstr "آیا هنگام ارسال ایمیل از احراز هویت SMTP استفاده شود یا خیر"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:52
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:54
 msgid "Username"
 msgstr "نام کاربری"
 
-#: src/Pmpr/Module/Mailer/Generic/Setting.php:56
+#: src/Pmpr/Module/Mailer/Generic/Setting.php:59
 msgid "Password"
 msgstr "گذرواژه"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:32
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:34
 msgid "Gmail SMTP"
 msgstr "SMTP جیمیل"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:34
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:36
 msgid "Gmail SMTP Configuration"
 msgstr "پیکربندی SMTP جیمیل"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:39
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:41
 msgid "OAuth Email"
 msgstr "ایمیل OAuth"
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:40
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:42
 msgid ""
 "The email address that you will use for SMTP authentication. This should be "
 "the same email used in the Google Developers Console."
@@ -98,70 +152,66 @@ msgstr ""
 "آدرس ایمیلی که برای احراز هویت SMTP استفاده خواهید کرد. این ایمیل باید همان "
 "ایمیلی باشد که در Google Developers Console استفاده شده است."
 
-#: src/Pmpr/Module/Mailer/Gmail/Setting.php:108
+#: src/Pmpr/Module/Mailer/Gmail/Setting.php:110
 #, php-format
 msgid "%s cannot send email until you enter your credentials in the %s."
 msgstr ""
 "تا زمانی که اطلاعات مربوطه در %s را وارد نکرده‌اید، %s غیر فعال خواهد بود."
 
-#: src/Pmpr/Module/Mailer/Mailer.php:27
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:38
+#: src/Pmpr/Module/Mailer/Mailer.php:28
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:47
 msgid "Mailer"
 msgstr "ایمیل رسان"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:39
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:48
 msgid "Mailer Setting"
 msgstr "تنظیمات ایمیل رسان"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:49
-msgid "General"
-msgstr "عمومی"
-
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:50
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:62
 msgid "General Configuration"
 msgstr "پیکربندی عمومی"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:54
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:66
 msgid "SMTP Configuration"
 msgstr "پیکربندی اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:58
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:70
 msgid "SMTP Engine"
 msgstr "متور SMTP"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:60
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:72
 msgid "Generic"
 msgstr "عمومی"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:61
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:73
 msgid "Gmail"
 msgstr "جیمیل"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:65
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:77
 msgid "Type of Encryption"
 msgstr "نوع رمزنگاری"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:66
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:78
 msgid "No Encryption"
 msgstr "بدون رمزنگاری"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:67
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:79
 msgid "SSL"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:68
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:80
 msgid "TLS"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:70
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:82
 msgid "For most servers SSL/TLS is the recommended option."
 msgstr "برای بیشتر سرورها SSL/TLS پیشنهاد می‌شود."
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:74
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:86
 msgid "SMTP Port"
 msgstr "پورت اس ام تی پی"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:81
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:93
 #, php-format
 msgid ""
 "The port which will be used when sending an email (%s). If you choose TLS it "
@@ -170,57 +220,78 @@ msgstr ""
 "درگاهی که هنگام ارسال ایمیل استفاده می شود (%s). اگر TLS را انتخاب کنید باید "
 "روی %s تنظیم شود. برای SSL از پورت %s استفاده کنید."
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:82
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:94
 msgid "587/465/25"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:83
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:95
 msgid "587"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:84
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:96
 msgid "465"
 msgstr ""
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:91
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:103
 msgid "Email Information"
 msgstr "اطلاعات ایمیل"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:95
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:107
 msgid "From Email Address"
 msgstr "آدرس ایمیل"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:100
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:112
 msgid "From Name"
 msgstr "نام"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:109
-msgid "Send Test Email"
-msgstr "ارسال ایمیل آزمایشی"
-
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:113
-msgid "Send To"
-msgstr "ارسال به"
-
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:118
-msgid "Subject"
-msgstr "موضوع"
-
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:119
-msgid "This is test subject"
-msgstr "این یک موضوعآزمایشی است"
+msgid "Email Template"
+msgstr "قالب ایمیل"
 
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:123
-msgid "Email Body"
-msgstr "متن ایمیل"
-
-#: src/Pmpr/Module/Mailer/Setting/Setting.php:124
-msgid "This is a test message"
-msgstr "این یک پیغام آزمایشی است"
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:120
+msgid "Configure Template"
+msgstr "پیکربندی قالب"
 
 #: src/Pmpr/Module/Mailer/Setting/Setting.php:128
-msgid "Send Email"
-msgstr "ارسال ایمیل"
+msgid "Logo"
+msgstr "لوگو"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:133
+msgid "Base Color"
+msgstr "رنگ اصلی"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:138
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:143
+msgid "Body Background Color"
+msgstr "رنگ پس‌زمینه بدنه"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:148
+msgid "Body Text Color"
+msgstr "رنگ متن بدنه"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:153
+msgid "Footer Text"
+msgstr "متن پاورقی"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:154
+msgid "Website"
+msgstr "وب سایت"
+
+#: src/Pmpr/Module/Mailer/Setting/Setting.php:158
+msgid "Footer Text Color"
+msgstr "رنگ متن فوتر"
+
+#~ msgid "This is test subject"
+#~ msgstr "این یک موضوعآزمایشی است"
+
+#~ msgid "Email Body"
+#~ msgstr "متن ایمیل"
+
+#~ msgid "This is a test message"
+#~ msgstr "این یک پیغام آزمایشی است"
 
 #~ msgid "Error: "
 #~ msgstr "خطا: "
@@ -277,9 +348,6 @@ msgstr "ارسال ایمیل"
 
 #~ msgid "SMTP"
 #~ msgstr "اس ام تی پی"
-
-#~ msgid "Configuration"
-#~ msgstr "پیکربندی"
 
 #~ msgid "To"
 #~ msgstr "به"

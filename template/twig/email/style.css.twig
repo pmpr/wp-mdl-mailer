@@ -1,0 +1,271 @@
+body {
+    padding: 0;
+    text-align: center;
+    background-color: {{ bg|esc_attr }};
+}
+
+#outer_wrapper {
+    background-color: {{ bg|esc_attr }};
+}
+
+#inner_wrapper {
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: {{ body_bg|esc_attr }};
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0;
+    max-width: 600px;
+    -webkit-text-size-adjust: none !important;
+}
+
+#template_header {
+    color: {{ body_text|esc_attr }};
+    border-bottom: 0;
+    font-weight: bold;
+    line-height: 100%;
+    vertical-align: middle;
+    background-color: {{ body_bg|esc_attr }};
+    border-radius: 3px 3px 0 0 !important;
+    font-family: {{ font_family|esc_attr }};
+}
+
+#template_header svg {
+    max-width: 150px;
+}
+
+.hr {
+    border-bottom: 1px solid #1e1e1e;
+    opacity: 0.2;
+    margin: 16px 0;
+}
+
+.hr-top {
+    margin-top: 32px;
+}
+
+.hr-bottom {
+    margin-bottom: 32px;
+}
+
+#template_header_image {
+    padding: 32px 32px 0;
+}
+
+#template_header_image p {
+    margin-bottom: 0;
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+#template_header_image img {
+    width: 200px;
+}
+
+.email-logo-text {
+    color: {{ link_color|esc_attr }};
+    font-family: {{ font_family|esc_attr }};
+    font-size: 18px;
+}
+
+.email-introduction {
+    padding-bottom: 24px;
+}
+
+#body_content table td td.email-additional-content {
+    color: {{ body_text|esc_attr }};
+    font-family: {{ font_family|esc_attr }};
+    padding: 32px 0 0;
+}
+
+.email-additional-content p {
+    text-align: center;
+}
+
+.email-additional-content-aligned p {
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+
+#template_footer {
+    {% if footer_separator is same as ('border') %}
+        border-top: 1px solid {{ footer_separator_bg|esc_attr }};
+    {% else %}
+        background-color: {{ footer_separator_bg|esc_attr }};
+    {% endif %}
+}
+
+#template_footer td {
+    padding: 0;
+    border-radius: 0;
+}
+
+#template_footer #credit {
+    border: 0;
+    color: {{ footer_text|esc_attr }};
+    font-family: {{ font_family|esc_attr }};
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    padding: 20px 32px;
+}
+
+#template_footer #credit p {
+    margin: 0;
+}
+
+#body_content {
+    background-color: {{ body_bg|esc_attr }};
+}
+
+#body_content table td {
+    padding: 20px 32px;
+}
+
+#body_content table td td {
+    padding: 12px;
+}
+
+#body_content table td th {
+    padding: 12px;
+}
+
+#body_content .order-item-data td {
+    border: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+#body_content p {
+    margin: 0 0 16px;
+}
+
+#body_content_inner {
+    color: {{ text_lighter_20|esc_attr }};
+    font-family: {{ font_family|esc_attr }};
+    font-size: 16px;
+    line-height: 150%;
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+.td {
+    color: {{ text_lighter_20|esc_attr }};
+    border: 0;
+    vertical-align: middle;
+}
+
+.link {
+    color: {{ link_color|esc_attr }};
+}
+
+a {
+    color: {{ link_color|esc_attr }};
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#header_wrapper {
+    padding: 20px 32px;
+    display: block;
+}
+
+#header_wrapper h1 {
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+#template_footer #credit,
+#template_footer #credit a {
+    color: {{ footer_text|esc_attr }};
+}
+
+img {
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    vertical-align: middle;
+    margin- {% if is_rtl %} left{% else %} right {% endif %}: 24px;
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: {{ body_text|esc_attr }};
+    font-family: {{ font_family|esc_attr }};
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+h2 {
+    color: {{ body_text|esc_attr }};
+    display: block;
+    font-family: {{ font_family|esc_attr }};
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+    margin: 0 0 18px;
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+h3 {
+    color: {{ body_text|esc_attr }};
+    display: block;
+    font-family: {{ font_family|esc_attr }};
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+    margin: 16px 0 8px;
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+.font-family {
+    font-family: {{ font_family|esc_attr }};
+}
+
+.text-start {
+    text-align: {% if is_rtl %}right{% else %}left{% endif %};
+}
+
+.text-end {
+    text-align: {% if is_rtl %}left{% else %}right{% endif %};
+}
+
+/**
+ * Media queries are not supported by all email clients, however they do work on modern mobile
+ * Gmail clients and can help us achieve better consistency there.
+ */
+@media screen and (max-width: 600px) {
+
+    #template_header_image {
+        padding: 16px 10px 0 !important;
+    }
+
+    #header_wrapper {
+        padding: 16px 10px 0 !important;
+    }
+
+    #header_wrapper h1 {
+        font-size: 24px !important;
+    }
+
+    #body_content_inner_cell {
+        padding: 10px !important;
+    }
+
+    #body_content_inner {
+        font-size: 12px !important;
+    }
+
+}
+
