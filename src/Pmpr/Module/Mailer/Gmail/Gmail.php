@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6838de1280815             |
+    |             68729e8b393ee             |
     |_______________________________________|
 */
  namespace Pmpr\Module\Mailer\Gmail; use PHPMailer\PHPMailer\PHPMailer; use Pmpr\Common\Foundation\Interfaces\Constants; use Pmpr\Module\Mailer\Engine; use Pmpr\Module\Mailer\Gmail\PHPMailer as CustomPHPMailer; class Gmail extends Engine { public function yaosckuqsmaeqgka() { $immqesyuiaiyauio = $GLOBALS['phpmailer'] ?? null; if (!$immqesyuiaiyauio instanceof PHPMailer) { require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php'; require_once ABSPATH . WPINC . '/PHPMailer/SMTP.php'; require_once ABSPATH . WPINC . '/PHPMailer/Exception.php'; $immqesyuiaiyauio = new CustomPHPMailer(true); $immqesyuiaiyauio::$validator = function ($owaiikyuwwwmswgc) { return (bool) $this->uwkmaywceaaaigwo()->gyecsegqciqykomu()->qkgmsqgmwoamekyk($owaiikyuwwwmswgc); }; $this->caokeucsksukesyo()->mskuyeumceaigegs()->debug('Mailer: Custom PHPMailer Initialized.'); $GLOBALS['phpmailer'] = $immqesyuiaiyauio; } else { $this->caokeucsksukesyo()->mskuyeumceaigegs()->debug('Mailer: PHPMailer Already Initialized.', ['correct' => $immqesyuiaiyauio instanceof CustomPHPMailer ? Constants::wiquocqckkqkmayo : Constants::ioyokcgwaowoqskk]); } } public function ossgymsyuaouywqg(PHPMailer $ockoeumsksqeoiyo) : PHPMailer { $ockoeumsksqeoiyo->Host = 'smtp.gmail.com'; $ockoeumsksqeoiyo->SMTPAuth = true; $ockoeumsksqeoiyo->AuthType = 'XOAUTH2'; return parent::ossgymsyuaouywqg($ockoeumsksqeoiyo); } }
